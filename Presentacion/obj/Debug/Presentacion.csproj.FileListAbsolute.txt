@@ -1,0 +1,40 @@
+D:\Laboratorios\LabAFP\Presentacion\bin\Debug\Presentacion.exe.config
+D:\Laboratorios\LabAFP\Presentacion\bin\Debug\Presentacion.exe
+D:\Laboratorios\LabAFP\Presentacion\bin\Debug\Presentacion.pdb
+D:\Laboratorios\LabAFP\Presentacion\bin\Debug\Datos.dll
+D:\Laboratorios\LabAFP\Presentacion\bin\Debug\EntityFramework.dll
+D:\Laboratorios\LabAFP\Presentacion\bin\Debug\EntityFramework.SqlServer.dll
+D:\Laboratorios\LabAFP\Presentacion\bin\Debug\Negocio.dll
+D:\Laboratorios\LabAFP\Presentacion\bin\Debug\Datos.pdb
+D:\Laboratorios\LabAFP\Presentacion\bin\Debug\Datos.dll.config
+D:\Laboratorios\LabAFP\Presentacion\bin\Debug\Negocio.pdb
+D:\Laboratorios\LabAFP\Presentacion\bin\Debug\EntityFramework.xml
+D:\Laboratorios\LabAFP\Presentacion\bin\Debug\EntityFramework.SqlServer.xml
+D:\Laboratorios\LabAFP\Presentacion\obj\Debug\Presentacion.csproj.AssemblyReference.cache
+D:\Laboratorios\LabAFP\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
+D:\Laboratorios\LabAFP\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.cache
+D:\Laboratorios\LabAFP\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+D:\Laboratorios\LabAFP\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
+D:\Laboratorios\LabAFP\Presentacion\obj\Debug\Presentacion.exe
+D:\Laboratorios\LabAFP\Presentacion\obj\Debug\Presentacion.pdb
+C:\PROGRA\C#\LabAFP - incompleto\Presentacion\bin\Debug\Presentacion.exe.config
+C:\PROGRA\C#\LabAFP - incompleto\Presentacion\bin\Debug\Presentacion.exe
+C:\PROGRA\C#\LabAFP - incompleto\Presentacion\bin\Debug\Presentacion.pdb
+C:\PROGRA\C#\LabAFP - incompleto\Presentacion\bin\Debug\Datos.dll
+C:\PROGRA\C#\LabAFP - incompleto\Presentacion\bin\Debug\EntityFramework.dll
+C:\PROGRA\C#\LabAFP - incompleto\Presentacion\bin\Debug\EntityFramework.SqlServer.dll
+C:\PROGRA\C#\LabAFP - incompleto\Presentacion\bin\Debug\Negocio.dll
+C:\PROGRA\C#\LabAFP - incompleto\Presentacion\bin\Debug\Datos.pdb
+C:\PROGRA\C#\LabAFP - incompleto\Presentacion\bin\Debug\Datos.dll.config
+C:\PROGRA\C#\LabAFP - incompleto\Presentacion\bin\Debug\Negocio.pdb
+C:\PROGRA\C#\LabAFP - incompleto\Presentacion\bin\Debug\EntityFramework.xml
+C:\PROGRA\C#\LabAFP - incompleto\Presentacion\bin\Debug\EntityFramework.SqlServer.xml
+C:\PROGRA\C#\LabAFP - incompleto\Presentacion\obj\Debug\Presentacion.csproj.AssemblyReference.cache
+C:\PROGRA\C#\LabAFP - incompleto\Presentacion\obj\Debug\Presentacion.FormReporte.resources
+C:\PROGRA\C#\LabAFP - incompleto\Presentacion\obj\Debug\Presentacion.FormRetiro.resources
+C:\PROGRA\C#\LabAFP - incompleto\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
+C:\PROGRA\C#\LabAFP - incompleto\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.cache
+C:\PROGRA\C#\LabAFP - incompleto\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+C:\PROGRA\C#\LabAFP - incompleto\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
+C:\PROGRA\C#\LabAFP - incompleto\Presentacion\obj\Debug\Presentacion.exe
+C:\PROGRA\C#\LabAFP - incompleto\Presentacion\obj\Debug\Presentacion.pdb
