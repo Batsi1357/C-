@@ -1,0 +1,24 @@
+D:\Laboratorios\LabAFP\Datos\bin\Debug\Datos.dll.config
+D:\Laboratorios\LabAFP\Datos\bin\Debug\Datos.dll
+D:\Laboratorios\LabAFP\Datos\bin\Debug\Datos.pdb
+D:\Laboratorios\LabAFP\Datos\bin\Debug\EntityFramework.dll
+D:\Laboratorios\LabAFP\Datos\bin\Debug\EntityFramework.SqlServer.dll
+D:\Laboratorios\LabAFP\Datos\bin\Debug\EntityFramework.xml
+D:\Laboratorios\LabAFP\Datos\bin\Debug\EntityFramework.SqlServer.xml
+D:\Laboratorios\LabAFP\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+D:\Laboratorios\LabAFP\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+D:\Laboratorios\LabAFP\Datos\obj\Debug\Datos.csproj.CopyComplete
+D:\Laboratorios\LabAFP\Datos\obj\Debug\Datos.dll
+D:\Laboratorios\LabAFP\Datos\obj\Debug\Datos.pdb
+C:\PROGRA\C#\LabAFP - incompleto\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\PROGRA\C#\LabAFP - incompleto\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\PROGRA\C#\LabAFP - incompleto\Datos\obj\Debug\Datos.dll
+C:\PROGRA\C#\LabAFP - incompleto\Datos\obj\Debug\Datos.pdb
+C:\PROGRA\C#\LabAFP - incompleto\Datos\bin\Debug\Datos.dll.config
+C:\PROGRA\C#\LabAFP - incompleto\Datos\bin\Debug\Datos.dll
+C:\PROGRA\C#\LabAFP - incompleto\Datos\bin\Debug\Datos.pdb
+C:\PROGRA\C#\LabAFP - incompleto\Datos\bin\Debug\EntityFramework.dll
+C:\PROGRA\C#\LabAFP - incompleto\Datos\bin\Debug\EntityFramework.SqlServer.dll
+C:\PROGRA\C#\LabAFP - incompleto\Datos\bin\Debug\EntityFramework.xml
+C:\PROGRA\C#\LabAFP - incompleto\Datos\bin\Debug\EntityFramework.SqlServer.xml
+C:\PROGRA\C#\LabAFP - incompleto\Datos\obj\Debug\Datos.csproj.CopyComplete

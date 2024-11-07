@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="db_labAFPModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AFP">
+    <Key>
+      <PropertyRef Name="AFPId" />
+    </Key>
+    <Property Name="AFPId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Eliminado" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Empleado">
+    <Key>
+      <PropertyRef Name="EmpleadoId" />
+    </Key>
+    <Property Name="EmpleadoId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DNI" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Apellidos" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FechaNacimiento" Type="date" Nullable="false" />
+    <Property Name="Eliminado" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Retiro">
+    <Key>
+      <PropertyRef Name="RetiroId" />
+    </Key>
+    <Property Name="RetiroId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmpleadoId" Type="int" Nullable="false" />
+    <Property Name="AFPId" Type="int" Nullable="false" />
+    <Property Name="Monto" Type="decimal" Precision="16" Scale="2" Nullable="false" />
+    <Property Name="CuentaInterbancaria" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Eliminado" Type="bit" Nullable="false" />
+  </EntityType>
+  <Association Name="Retiro_AFP">
+    <End Role="AFP" Type="Self.AFP" Multiplicity="1" />
+    <End Role="Retiro" Type="Self.Retiro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AFP">
+        <PropertyRef Name="AFPId" />
+      </Principal>
+      <Dependent Role="Retiro">
+        <PropertyRef Name="AFPId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Retiro_Empleado">
+    <End Role="Empleado" Type="Self.Empleado" Multiplicity="1" />
+    <End Role="Retiro" Type="Self.Retiro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleado">
+        <PropertyRef Name="EmpleadoId" />
+      </Principal>
+      <Dependent Role="Retiro">
+        <PropertyRef Name="EmpleadoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="db_labAFPModelStoreContainer">
+    <EntitySet Name="AFP" EntityType="Self.AFP" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Empleado" EntityType="Self.Empleado" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Retiro" EntityType="Self.Retiro" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="Retiro_AFP" Association="Self.Retiro_AFP">
+      <End Role="AFP" EntitySet="AFP" />
+      <End Role="Retiro" EntitySet="Retiro" />
+    </AssociationSet>
+    <AssociationSet Name="Retiro_Empleado" Association="Self.Retiro_Empleado">
+      <End Role="Empleado" EntitySet="Empleado" />
+      <End Role="Retiro" EntitySet="Retiro" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

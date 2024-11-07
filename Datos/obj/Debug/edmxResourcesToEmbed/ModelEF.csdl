@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="db_labAFPModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AFP">
+    <Key>
+      <PropertyRef Name="AFPId" />
+    </Key>
+    <Property Name="AFPId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Eliminado" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Retiro" Relationship="Self.Retiro_AFP" FromRole="AFP" ToRole="Retiro" />
+  </EntityType>
+  <EntityType Name="Empleado">
+    <Key>
+      <PropertyRef Name="EmpleadoId" />
+    </Key>
+    <Property Name="EmpleadoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DNI" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Apellidos" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FechaNacimiento" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Eliminado" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Retiro" Relationship="Self.Retiro_Empleado" FromRole="Empleado" ToRole="Retiro" />
+  </EntityType>
+  <EntityType Name="Retiro">
+    <Key>
+      <PropertyRef Name="RetiroId" />
+    </Key>
+    <Property Name="RetiroId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmpleadoId" Type="Int32" Nullable="false" />
+    <Property Name="AFPId" Type="Int32" Nullable="false" />
+    <Property Name="Monto" Type="Decimal" Precision="16" Scale="2" Nullable="false" />
+    <Property Name="CuentaInterbancaria" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Eliminado" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="AFP" Relationship="Self.Retiro_AFP" FromRole="Retiro" ToRole="AFP" />
+    <NavigationProperty Name="Empleado" Relationship="Self.Retiro_Empleado" FromRole="Retiro" ToRole="Empleado" />
+  </EntityType>
+  <Association Name="Retiro_AFP">
+    <End Role="AFP" Type="Self.AFP" Multiplicity="1" />
+    <End Role="Retiro" Type="Self.Retiro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AFP">
+        <PropertyRef Name="AFPId" />
+      </Principal>
+      <Dependent Role="Retiro">
+        <PropertyRef Name="AFPId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Retiro_Empleado">
+    <End Role="Empleado" Type="Self.Empleado" Multiplicity="1" />
+    <End Role="Retiro" Type="Self.Retiro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleado">
+        <PropertyRef Name="EmpleadoId" />
+      </Principal>
+      <Dependent Role="Retiro">
+        <PropertyRef Name="EmpleadoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BDEFEntitiess" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AFP" EntityType="Self.AFP" />
+    <EntitySet Name="Empleado" EntityType="Self.Empleado" />
+    <EntitySet Name="Retiro" EntityType="Self.Retiro" />
+    <AssociationSet Name="Retiro_AFP" Association="Self.Retiro_AFP">
+      <End Role="AFP" EntitySet="AFP" />
+      <End Role="Retiro" EntitySet="Retiro" />
+    </AssociationSet>
+    <AssociationSet Name="Retiro_Empleado" Association="Self.Retiro_Empleado">
+      <End Role="Empleado" EntitySet="Empleado" />
+      <End Role="Retiro" EntitySet="Retiro" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
